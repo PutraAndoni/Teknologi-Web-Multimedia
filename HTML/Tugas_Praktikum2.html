@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Entry</title>
+</head>
+<body>
+  <h1>Homepage DATA ENTRY</h1>
+  <form action="/action_page.php">
+    <table style="width: 50%;">
+      <tr>
+        <td style="width: 30%;">1. Nama :</td>
+        <td><input type="text" id="nama" name="nama" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>2. NRP :</td>
+        <td><input type="text" id="nrp" name="nrp" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>3. Kelas :</td>
+        <td><input type="text" id="kelas" name="kelas" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>4. Jenis Kelamin :</td>
+        <td>
+          <input type="radio" id="pria" name="jk" value="pria" checked>
+          <label for="pria">Pria</label>&nbsp;
+          <input type="radio" id="wanita" name="jk" value="wanita">
+          <label for="wanita">Wanita</label>
+        </td>
+      </tr>
+      <tr>
+        <td>5. Agama :</td>
+        <td>
+          <select id="agama" name="agama" style="width: 20%;">
+            <option value="islam">ISLAM</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>6. Tempat/Tanggal Lahir :</td>
+        <td><input type="text" id="ttl" name="ttl" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>7. Alamat :</td>
+        <td><textarea id="alamat" name="alamat" rows="4" cols="50" style="width: 100%;"></textarea></td>
+      </tr>
+      <tr>
+        <td>8. Riwayat Pendidikan :</td>
+        <td>
+          <table style="width: 100%;">
+            <tr>
+              <th style="text-align: left;">Tingkat</th>
+              <th>Sekolah</th>
+            </tr>
+            <tr>
+              <td style="text-align: left;">SD</td>
+              <td><input type="text" id="sd" name="sd" style="width: 100%;"></td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">SMP</td>
+              <td><input type="text" id="smp" name="smp" style="width: 100%;"></td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">SMA</td>
+              <td><input type="text" id="sma" name="sma" style="width: 100%;"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>9. Email :</td>
+        <td><input type="email" id="email" name="email" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>10. Homepage :</td>
+        <td><input type="text" id="homepage" name="homepage" style="width: 50%;"></td>
+      </tr>
+      <tr>
+        <td>11. Hobby :</td>
+        <td><textarea id="hobby" name="hobby" rows="4" cols="50" style="width: 50%;"></textarea></td>
+      </tr>
+      <tr>
+        <td>12. Interest :</td>
+        <td>
+          <ul style="list-style: none;">
+            <li><input type="checkbox" id="komputer" name="interest" value="komputer"> Komputer</li>
+            <li><input type="checkbox" id="sport" name="interest" value="sport"> Sport</li>
+            <li><input type="checkbox" id="travelling" name="interest" value="travelling"> Travelling</li>
+            <li><input type="checkbox" id="writing" name="interest" value="writing"> Writing</li>
+            <li><input type="checkbox" id="reading" name="interest" value="reading"> Reading</li>
+          </ul>
+        </td>
+      </tr>
+      <input type="reset" value="RESET">
+      <input type="submit" value="SIMPAN">
